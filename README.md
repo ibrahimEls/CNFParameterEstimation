@@ -1,4 +1,4 @@
-# Adversarial Normalizing Flows for High Precision Classification
+# Contrastive Normalizing Flows for High Precision Classification
 Solution to the FAIR UNIVERSE - Higgs Uncertainty Challenge
 ## Author(s): 
 Ibrahim Elsharkawy ie4@illinois.edu
