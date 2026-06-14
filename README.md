@@ -1,12 +1,12 @@
 # Contrastive Normalizing Flows for High Precision Classification
 Solution to the FAIR UNIVERSE - Higgs Uncertainty Challenge
-## Author(s): 
-Ibrahim Elsharkawy ie4@illinois.edu
+## Authors: 
+Ibrahim Elsharkawy ibrahim.elsharkawy@mail.utoronto.ca
+Yoni Kahn yf.kahn@utoronto.ca
 
 # How to run the solution 
 This document describes the hardware setup, software dependencies, installation steps, and instructions for training, evaluating, and predicting with the HEP-Challenge models. Please read carefully to ensure the correct environment and file structure.
 
----
 
 ## 1. Hardware Setup
 
@@ -20,12 +20,10 @@ This document describes the hardware setup, software dependencies, installation 
 - **Memory:** 64 GB RAM
 - **GPU:** 1 NVIDIA T4 GPU
 
----
 
 ## 2. Operating System / Platform used
 - **OS:** macOS Sonoma 14.1
 
----
 
 ## 3. Software Dependencies and Installation
 
@@ -70,7 +68,6 @@ This document describes the hardware setup, software dependencies, installation 
    pip install -r requirements.txt
    ```
 
----
 
 ## 4. Model Training and Execution
 
@@ -110,7 +107,6 @@ python train_class.py \
 - `--models_dir`: Directory containing subdirectories `1_jet` and `2_jet` with checkpoint files.
 - `--checkpoint_path`: Directory where model checkpoints will be saved during training.
 
----
 
 ### 4.3 Creating Histograms
 
@@ -130,7 +126,6 @@ python create_hist.py \
 - `--json_save_path`: Directory where the resulting JSON file will be saved.
 - `--models_dir`: Directory containing NF model checkpoints.
 
----
 
 ### 4.4 Running Neyman Construction
 
@@ -152,7 +147,6 @@ python create_neyman.py \
 - `--class_model_path`: Path to the classifier model checkpoint.
 - `--models_dir`: Directory containing `1_jet` and `2_jet` subdirectories with NF model checkpoint files.
 
----
 
 ### 4.5 Prediction
 
@@ -182,14 +176,12 @@ python predict.py \
 - `--predict_numevents`: Flag to indicate whether to predict mu on a test dataset.
 - `--nevent`: Number of events to test if `predict_numevents` is not activated.
 
----
 
 ## 5. Important Side Effects
 
 - **Directory Structure:**  
   - Models are saved in `Test/lighting_logs`. The subsequent processing steps will fail if the directory structure is not changed or if the paths are incorrect.
 
----
 
 ## 6. Key Assumptions
 
